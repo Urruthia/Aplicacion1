@@ -32,14 +32,13 @@ app.set('view engine', '.hbs');
 
 // Middlewares
 app.use(morgan('dev'));
-app.use(myConnection(mysql,{
-
-        host: 'localhost',
-        user: 'root',
-        password: '123456',
+/*app.use(myConnection(mysql,{
+        host: '192.168.40.133',
+        user: 'development',
+        password: '1234',
         port: 3306,
-        database: 'virtual'
-}));
+        database: 'Virtual'
+}));*/
 app.use(express.urlencoded({extended: false}));
 app.use(methodOverride('_method'));
 app.use(session({

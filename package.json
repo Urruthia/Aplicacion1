@@ -7,7 +7,8 @@
     "js": "^0.1.0",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.7.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
@@ -22,5 +23,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Urruthia/Aplicacion1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Urruthia/Aplicacion1/issues"
+  },
+  "homepage": "https://github.com/Urruthia/Aplicacion1#readme",
   "description": ""
 }

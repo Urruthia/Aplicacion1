@@ -1,23 +1,18 @@
-<div class="wrap-login100">    
-<form class="login100-form validate-form" action="/update/{{data.0.id}}" method="POST">
-<div class="form-group" >
-        <h1 class="title">Modificar</h1>
-        <label>        
-            <input value="{{data.0.id}}" type="text" id="id" name="id">
-        </label>
-        <label>
-           
-            <input value="{{data.0.name}}" type="text" id="name" name="name">
-        </label>
-                <label>
-
-            <input value="{{data.0.capital}}" type="text" id="capital" name="capital">
-          
-        </label>
-        
-
-          <button id="buttonI" type="submit">Editar </button>
-          <a href="/home" class="btn btn-danger">Regresar</a>
+<div class="wrap-login100">
+    <form class="login100-form validate-form" action="/update/{{data.id}}" method="POST">
+        <div class="form-group" >
+            <h1 class="title">Modificar</h1>
+            <label>        
+                <input value="{{data.id}}" type="text" id="id" name="id" readonly>
+            </label>
+            <label>
+                <input value="{{data.name}}" type="text" id="name" name="name">
+            </label>
+            <label>
+                <input value="{{data.capital}}" type="text" id="capital" name="capital">
+            </label>
+            <button id="buttonI" type="submit">Editar </button>
+            <a href="/home" class="btn btn-danger">Regresar</a>
         </div>
     </form>
-        </div>
+</div>

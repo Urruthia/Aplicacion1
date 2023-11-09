@@ -1,0 +1,53 @@
+<div class="wrap-login100">
+<form class="login100-form validate-form" action="/home" method="POST">
+<div class="form-group" >
+        <h1 class="title">Formulario</h1>
+        <label>
+        
+            <input placeholder="id" type="text" id="id" name="id">
+        </label>
+        <label>
+           
+            <input placeholder="name" type="text" id="name" name="name">
+        </label>
+                <label>
+
+            <input placeholder="capital" type="text" id="capital" name="capital">
+          
+        </label>
+        </div>
+        <div class="form-group">
+        <button id="buttonI" type="submit">Ingresar</button>
+        <button id="buttonI" type="submit">Camara</button>
+        <button id="buttonI" type="submit">Salir</button>
+        </div>
+        <div class="form-group">
+    <table class="tabla-productos">
+<thread>
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Actions</th>
+</tr>
+</thread>
+<tbody>
+{{#if data}}
+{{#each data}}
+<tr>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{capital}}</td>
+    <td>
+        <a href="/delete/{{id}}" class="btn btn-danger">Eliminar</a>
+        <a href="/update/{{id}}" class="btn btn-info">Update</a>
+    </td>
+</tr>
+{{/each}}
+{{/if}}
+</tbody>  
+</table>
+</div>
+    </form>
+    
+        
